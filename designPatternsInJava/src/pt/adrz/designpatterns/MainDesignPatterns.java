@@ -1,6 +1,6 @@
 package pt.adrz.designpatterns;
 
-public class Main {
+public class MainDesignPatterns {
 
 	/**
 	 * @param args
