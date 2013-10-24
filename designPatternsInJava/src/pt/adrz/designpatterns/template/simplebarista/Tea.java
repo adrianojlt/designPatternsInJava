@@ -1,4 +1,4 @@
-package pt.adrz.designpatterns.template.barista;
+package pt.adrz.designpatterns.template.simplebarista;
 
 public class Tea extends CaffeineBeverage {
 
