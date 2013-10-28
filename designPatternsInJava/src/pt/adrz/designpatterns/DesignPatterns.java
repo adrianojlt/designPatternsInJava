@@ -74,6 +74,8 @@ public class DesignPatterns {
 		System.out.println("Before sorting:");
 		for (int i = 0; i < ducks.length; i++) { System.out.println(ducks[i]); }
 		
+		// The sort method in Arrays give us the algorithm, but you need to tell it 
+		// how to compare ducs witch is done by implementing the compareTo from Comparable interface
 		Arrays.sort(ducks);
 
 		System.out.println("After sorting:");

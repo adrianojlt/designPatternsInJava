@@ -8,7 +8,8 @@ public class Main {
 	public static void main(String[] args) {
 		
 		DesignPatterns dp = new DesignPatterns();
-		dp.adapterDuck();
+		//dp.adapterDuck();
+		dp.templateBeverageTest();
 	}
 
 }
