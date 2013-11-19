@@ -2,14 +2,41 @@ package pt.adrz.designpatterns;
 
 import java.util.Arrays;
 
-import pt.adrz.designpatterns.adapter.duck.*;
-import pt.adrz.designpatterns.command.*;
-import pt.adrz.designpatterns.decorator.*;
-import pt.adrz.designpatterns.facade.hometheater.*;
-import pt.adrz.designpatterns.factory.pizza.*;
-import pt.adrz.designpatterns.observer.*;
-import pt.adrz.designpatterns.observer.weather.*;
-import pt.adrz.designpatterns.template.barista.*;
+import pt.adrz.designpatterns.adapter.duck.Duck;
+import pt.adrz.designpatterns.adapter.duck.MallardDuck;
+import pt.adrz.designpatterns.adapter.duck.TurkeyAdapter;
+import pt.adrz.designpatterns.adapter.duck.WildTurkey;
+import pt.adrz.designpatterns.command.Command;
+import pt.adrz.designpatterns.command.GarageDoor;
+import pt.adrz.designpatterns.command.GarageDoorOpenCommand;
+import pt.adrz.designpatterns.command.Light;
+import pt.adrz.designpatterns.command.LightOffCommand;
+import pt.adrz.designpatterns.command.LightOnCommand;
+import pt.adrz.designpatterns.command.RemoteControl;
+import pt.adrz.designpatterns.command.SimpleRemoteControl;
+import pt.adrz.designpatterns.decorator.Beverage;
+import pt.adrz.designpatterns.decorator.CondimentMilk;
+import pt.adrz.designpatterns.decorator.CondimentSoy;
+import pt.adrz.designpatterns.decorator.Decaf;
+import pt.adrz.designpatterns.decorator.Espresso;
+import pt.adrz.designpatterns.decorator.HouseBlend;
+import pt.adrz.designpatterns.facade.hometheater.Amplifier;
+import pt.adrz.designpatterns.facade.hometheater.CdPlayer;
+import pt.adrz.designpatterns.facade.hometheater.DvdPlayer;
+import pt.adrz.designpatterns.facade.hometheater.HomeTheaterFacade;
+import pt.adrz.designpatterns.facade.hometheater.PopcornPopper;
+import pt.adrz.designpatterns.facade.hometheater.Projector;
+import pt.adrz.designpatterns.facade.hometheater.Screen;
+import pt.adrz.designpatterns.facade.hometheater.TheaterLights;
+import pt.adrz.designpatterns.facade.hometheater.Tuner;
+import pt.adrz.designpatterns.factory.pizza.NYPizzaStore;
+import pt.adrz.designpatterns.factory.pizza.PizzaStore;
+import pt.adrz.designpatterns.observer.SwingObserverExample;
+import pt.adrz.designpatterns.observer.weather.CurrentConditionsDisplay;
+import pt.adrz.designpatterns.observer.weather.ForecastDisplay;
+import pt.adrz.designpatterns.observer.weather.WeatherData;
+import pt.adrz.designpatterns.template.simplebarista.Coffee;
+import pt.adrz.designpatterns.template.simplebarista.Tea;
 
 public class DesignPatterns {
 
@@ -47,6 +74,8 @@ public class DesignPatterns {
 		System.out.println("Before sorting:");
 		for (int i = 0; i < ducks.length; i++) { System.out.println(ducks[i]); }
 		
+		// The sort method in Arrays give us the algorithm, but you need to tell it 
+		// how to compare ducs witch is done by implementing the compareTo from Comparable interface
 		Arrays.sort(ducks);
 
 		System.out.println("After sorting:");
@@ -181,5 +210,13 @@ public class DesignPatterns {
  
 		homeTheater.watchMovie("Raiders of the Lost Ark");
 		homeTheater.endMovie();
+	}
+	
+	public void templateMethodSimpleBarista() {
+		
+	}
+
+	public void templateMethodBarista() {
+		
 	}
 }
