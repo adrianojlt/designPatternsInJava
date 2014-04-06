@@ -147,7 +147,7 @@ public class DesignPatterns {
 		remoteControl.pressButton();
 	}
 	
-	public void swingObserver() {
+	public void observerSwing() {
 		new SwingObserverExample();
 	}
 	
@@ -181,7 +181,7 @@ public class DesignPatterns {
 		PizzaStore nyStore = new NYPizzaStore();
 	}
 	
-	public void weatherObserver() {
+	public void observerWeather() {
 		
 		WeatherData weatherData = new WeatherData();
 		
@@ -217,6 +217,10 @@ public class DesignPatterns {
 	}
 
 	public void templateMethodBarista() {
+		
+	}
+	
+	public void singleton() {
 		
 	}
 }

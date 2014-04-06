@@ -1,5 +1,7 @@
 package pt.adrz.designpatterns;
 
+import pt.adrz.designpatterns.observer.SwingObserverExample;
+
 public class Main {
 
 	/**
@@ -9,7 +11,6 @@ public class Main {
 		
 		DesignPatterns dp = new DesignPatterns();
 		//dp.adapterDuck();
-		dp.templateBeverageTest();
+		//dp.templateBeverageTest();
 	}
-
 }
