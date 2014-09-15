@@ -6,7 +6,7 @@ public abstract class Pizza {
 	
 	String name, dough, sauce;
 	
-	ArrayList toppings = new ArrayList();
+	ArrayList<String> toppings = new ArrayList<String>();
 	
 	public Pizza() { }
 	

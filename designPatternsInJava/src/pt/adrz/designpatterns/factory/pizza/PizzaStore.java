@@ -1,5 +1,12 @@
 package pt.adrz.designpatterns.factory.pizza;
 
+/**
+ * Here we have got a store waiting for subclasses. We are going to have
+ * a subclass for each regional type (NYPizzaStore, ChicagoPizzaStore, CaliforniaPizzaStore) 
+ * and each subclass is going to make a decision about what makes up a pizza. 
+ * @author adriano
+ *
+ */
 public abstract class PizzaStore {
 	
 	SimplePizzaFactory factory;

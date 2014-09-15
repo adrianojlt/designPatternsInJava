@@ -29,7 +29,9 @@ import pt.adrz.designpatterns.facade.hometheater.Projector;
 import pt.adrz.designpatterns.facade.hometheater.Screen;
 import pt.adrz.designpatterns.facade.hometheater.TheaterLights;
 import pt.adrz.designpatterns.facade.hometheater.Tuner;
+import pt.adrz.designpatterns.factory.pizza.ChicagoPizzaStore;
 import pt.adrz.designpatterns.factory.pizza.NYPizzaStore;
+import pt.adrz.designpatterns.factory.pizza.Pizza;
 import pt.adrz.designpatterns.factory.pizza.PizzaStore;
 import pt.adrz.designpatterns.observer.SwingObserverExample;
 import pt.adrz.designpatterns.observer.weather.CurrentConditionsDisplay;
@@ -179,6 +181,9 @@ public class DesignPatterns {
 	public void pizzaFactory() {
 		
 		PizzaStore nyStore = new NYPizzaStore();
+		PizzaStore chicagoStore = new ChicagoPizzaStore();
+		
+		Pizza pizza = nyStore.orderPizza("cheese");
 	}
 	
 	public void observerWeather() {

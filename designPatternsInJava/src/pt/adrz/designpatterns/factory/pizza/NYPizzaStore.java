@@ -1,5 +1,6 @@
 package pt.adrz.designpatterns.factory.pizza;
 
+
 public class NYPizzaStore extends PizzaStore {
 	
 	public NYPizzaStore() { }

@@ -1,14 +1,15 @@
 package pt.adrz.designpatterns.factory.pizza;
 
-public class NYStyleCheesePizza extends Pizza{
+public class NYStyleClamPizza extends Pizza{
 
-	public NYStyleCheesePizza() {
+	public NYStyleClamPizza() {
 
-		name = "NY Style Sauce and Cheese Pizza";
+		name = "NY Style Clam Pizza";
 		dough = "Thin Crust Dough";
 		sauce = "Mariara Sauce";
 
 		toppings.add("Grated Reggiano Cheese");
+		toppings.add("Fresh Clams from Long Island Sound");
 	}
 	
 	//@Override
