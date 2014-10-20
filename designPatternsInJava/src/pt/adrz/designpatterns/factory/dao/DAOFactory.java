@@ -1,24 +1,27 @@
 package pt.adrz.designpatterns.factory.dao;
 
+import pt.adrz.designpatterns.factory.dao.interfaces.AccountDAO;
+import pt.adrz.designpatterns.factory.dao.interfaces.CustomerDAO;
+import pt.adrz.designpatterns.factory.dao.interfaces.OrderDAO;
+
 public abstract class DAOFactory {
 	
-	// DAO types supported by the factory
-	public static final int MYSQL = 1;
-	public static final int ORACLE = 2;
-	public static final int MSSQL = 3;
+	enum STORAGE_TYPE {MYSQL,ORACLE,MSSQL,DB4O}
 	
 	public abstract CustomerDAO getCustomerDAO();
 	public abstract AccountDAO getAccountDAO();
 	public abstract OrderDAO getOrderDAO();
 	
-	public static DAOFactory getDAOFactory( int whichFactory) {
+	public static DAOFactory getDAOFactory( STORAGE_TYPE whichFactory) {
 		
 		switch (whichFactory) {
 		case MYSQL:
 			return new MySqlDAOFactory();
 		case ORACLE:
-			return null;
+			return new OracleDAOFactory();
 		case MSSQL:
+			return null;
+		case DB4O:
 			return null;
 		default:
 			return null;

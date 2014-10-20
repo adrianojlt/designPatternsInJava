@@ -1,5 +1,8 @@
 package pt.adrz.designpatterns.factory.dao;
 
+import pt.adrz.designpatterns.factory.dao.interfaces.CustomerDAO;
+import pt.adrz.designpatterns.factory.dao.models.Customer;
+
 public class MySqlCustomerDAO implements CustomerDAO {
 
 	@Override

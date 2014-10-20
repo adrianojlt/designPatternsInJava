@@ -1,4 +1,4 @@
-package pt.adrz.designpatterns.factory.dao;
+package pt.adrz.designpatterns.factory.dao.models;
 
 import java.io.Serializable;
 

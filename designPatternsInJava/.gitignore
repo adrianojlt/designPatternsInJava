@@ -1,3 +1,6 @@
-/.settings
+/.class
+/img
+/*.db
+/target
 /bin
 *.class

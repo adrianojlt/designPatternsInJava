@@ -1,4 +1,6 @@
-package pt.adrz.designpatterns.factory.dao;
+package pt.adrz.designpatterns.factory.dao.interfaces;
+
+import pt.adrz.designpatterns.factory.dao.models.Customer;
 
 public interface CustomerDAO {
 	

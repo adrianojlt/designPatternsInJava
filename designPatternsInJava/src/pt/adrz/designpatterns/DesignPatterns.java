@@ -158,7 +158,7 @@ public class DesignPatterns {
 		// order an expresso with no condiments
 		Beverage espresso = new Espresso();
 		
-		System.out.println(espresso.getDescription() + " €" + espresso.cost());
+		System.out.println(espresso.getDescription() + " ï¿½" + espresso.cost());
 		
 		// order a HouseBlend ...
 		Beverage houseBlend = new HouseBlend(); 
@@ -166,7 +166,7 @@ public class DesignPatterns {
 		houseBlend = new CondimentMilk(houseBlend);	// ... wrap it with Milk
 		houseBlend = new CondimentSoy(houseBlend);	// ... wrap it with Soy
 		
-		System.out.println(houseBlend.getDescription() + " €" + houseBlend.cost());
+		System.out.println(houseBlend.getDescription() + " ï¿½" + houseBlend.cost());
 		
 		// order a Decaf ...
 		Beverage decaf = new Decaf();
@@ -175,7 +175,7 @@ public class DesignPatterns {
 		decaf = new CondimentMilk(decaf); 	// ... wrap it with more Milk
 		decaf = new CondimentSoy(decaf); 	// ... wrap it with Soy
 		
-		System.out.println(decaf.getDescription() + " €" + decaf.cost());
+		System.out.println(decaf.getDescription() + " ï¿½" + decaf.cost());
 	}
 	
 	public void pizzaFactory() {
@@ -184,6 +184,11 @@ public class DesignPatterns {
 		PizzaStore chicagoStore = new ChicagoPizzaStore();
 		
 		Pizza pizza = nyStore.orderPizza("cheese");
+		System.out.println("Ethan ordered a " + pizza.getName() + "\n");
+		
+		pizza = chicagoStore.orderPizza("calm");
+		System.out.println("Ethan ordered a " + pizza.getName() + "\n");
+
 	}
 	
 	public void observerWeather() {

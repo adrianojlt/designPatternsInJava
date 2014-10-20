@@ -3,9 +3,9 @@ package pt.adrz.designpatterns.factory.dao;
 import pt.adrz.designpatterns.factory.dao.interfaces.AccountDAO;
 import pt.adrz.designpatterns.factory.dao.models.Customer;
 
-public class MySqlAccountDAO implements AccountDAO {
-	
-	public static String TYPE = "MySql";
+public class OracleAccountDAO implements AccountDAO {
+
+	public static String TYPE = "Oracle";
 
 	@Override
 	public int insertAccount() {
