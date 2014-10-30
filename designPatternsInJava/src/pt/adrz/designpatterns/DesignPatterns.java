@@ -29,8 +29,8 @@ import pt.adrz.designpatterns.facade.hometheater.Projector;
 import pt.adrz.designpatterns.facade.hometheater.Screen;
 import pt.adrz.designpatterns.facade.hometheater.TheaterLights;
 import pt.adrz.designpatterns.facade.hometheater.Tuner;
-import pt.adrz.designpatterns.factory.pizza.ChicagoPizzaStore;
-import pt.adrz.designpatterns.factory.pizza.NYPizzaStore;
+import pt.adrz.designpatterns.factory.pizza.PizzaStoreChicago;
+import pt.adrz.designpatterns.factory.pizza.PizzaStoreNY;
 import pt.adrz.designpatterns.factory.pizza.Pizza;
 import pt.adrz.designpatterns.factory.pizza.PizzaStore;
 import pt.adrz.designpatterns.observer.SwingObserverExample;
@@ -178,18 +178,7 @@ public class DesignPatterns {
 		System.out.println(decaf.getDescription() + " �" + decaf.cost());
 	}
 	
-	public void pizzaFactory() {
-		
-		PizzaStore nyStore = new NYPizzaStore();
-		PizzaStore chicagoStore = new ChicagoPizzaStore();
-		
-		Pizza pizza = nyStore.orderPizza("cheese");
-		System.out.println("Ethan ordered a " + pizza.getName() + "\n");
-		
-		pizza = chicagoStore.orderPizza("calm");
-		System.out.println("Ethan ordered a " + pizza.getName() + "\n");
 
-	}
 	
 	public void observerWeather() {
 		

@@ -1,16 +1,28 @@
 package pt.adrz.designpatterns.factory.pizza;
 
-public class ChicagoPizzaStore extends PizzaStore{
+public class PizzaStoreChicago extends PizzaStore{
+	
+	public PizzaStoreChicago() { }
 
 	@Override
-	protected Pizza createPizza(String type) {
+	protected Pizza createPizza(PizzaType type) {
 		
 		Pizza pizza = null;
-		
-		if (type.equals("cheese")) { }
-		else if (type.equals("pepperone")) { }
-		else if (type.equals("clam")) { }
-		else if (type.equals("veggie")) { }
+
+		switch ( type ) {
+		case CHEESE:
+			pizza = new ChicagoStyleCheesePizza();
+			break;
+		case PEPPERONE:
+			pizza = new ChicagoStylePepperoniPizza();
+			break;
+		case CLAM:
+			break;
+		case VEGGIE:
+			break;
+		default:
+			break;
+		}
 		
 		return pizza;
 	}

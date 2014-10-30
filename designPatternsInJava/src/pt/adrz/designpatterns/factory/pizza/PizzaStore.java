@@ -17,7 +17,7 @@ public abstract class PizzaStore {
 		this.factory = factory;
 	}
 	
-	public Pizza orderPizza(String type) {
+	public Pizza orderPizza(PizzaType type) {
 		
 		Pizza pizza;
 		
@@ -40,6 +40,6 @@ public abstract class PizzaStore {
 	// ... now we have moved our factory object to this method
 	// all the responsibility for instantiating Pizzas has been moved into a method
 	// that act as a factor
-	protected abstract Pizza createPizza(String type);
+	protected abstract Pizza createPizza(PizzaType type);
 }
 
