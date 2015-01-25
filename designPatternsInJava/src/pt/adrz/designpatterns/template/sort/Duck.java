@@ -12,6 +12,7 @@ public class Duck implements Comparable<Duck> {
 	
 	public String toString() { return name + " weighs " + weight; }
 
+	@Override
 	public int compareTo(Duck duck) {
 		
 		if 		( this.weight  < duck.weight ) return -1;

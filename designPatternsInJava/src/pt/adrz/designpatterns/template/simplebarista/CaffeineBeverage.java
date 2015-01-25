@@ -2,8 +2,6 @@ package pt.adrz.designpatterns.template.simplebarista;
 
 public abstract class CaffeineBeverage {
 
-	// ... final to avoid override by subclasses
-
 	/**
 	 * A template method defines an algorithm in a base class using abstract operations that 
 	 * subclasses override to provide concrete behavior. 
