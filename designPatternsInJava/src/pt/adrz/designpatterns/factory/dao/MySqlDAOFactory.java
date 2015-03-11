@@ -1,8 +1,8 @@
 package pt.adrz.designpatterns.factory.dao;
 
-import pt.adrz.designpatterns.factory.dao.interfaces.AccountDAO;
-import pt.adrz.designpatterns.factory.dao.interfaces.CustomerDAO;
-import pt.adrz.designpatterns.factory.dao.interfaces.OrderDAO;
+import pt.adrz.designpatterns.factory.dao.interfaces.Account;
+import pt.adrz.designpatterns.factory.dao.interfaces.Customer;
+import pt.adrz.designpatterns.factory.dao.interfaces.Order;
 
 public class MySqlDAOFactory extends DAOFactory{
 	
@@ -18,17 +18,17 @@ public class MySqlDAOFactory extends DAOFactory{
 	}
 	
 	@Override
-	public CustomerDAO getCustomerDAO() {
+	public Customer getCustomerDAO() {
 		return new MySqlCustomerDAO();
 	}
 
 	@Override
-	public AccountDAO getAccountDAO() {
+	public Account getAccountDAO() {
 		return new MySqlAccountDAO();
 	}
 
 	@Override
-	public OrderDAO getOrderDAO() {
+	public Order getOrderDAO() {
 		return null;
 	}
 

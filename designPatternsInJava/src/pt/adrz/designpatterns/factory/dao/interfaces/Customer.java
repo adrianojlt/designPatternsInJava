@@ -1,8 +1,7 @@
 package pt.adrz.designpatterns.factory.dao.interfaces;
 
-import pt.adrz.designpatterns.factory.dao.models.Customer;
 
-public interface CustomerDAO {
+public interface Customer {
 	
 	public int insertCustomer();
 	public boolean deleteCustomer();

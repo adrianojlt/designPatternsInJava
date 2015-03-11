@@ -2,7 +2,7 @@ package pt.adrz.designpatterns.factory.dao.interfaces;
 
 import pt.adrz.designpatterns.factory.dao.models.Customer;
 
-public interface OrderDAO {
+public interface Order {
 	
 	public int insertOrder();
 	public boolean deleteOrder();
