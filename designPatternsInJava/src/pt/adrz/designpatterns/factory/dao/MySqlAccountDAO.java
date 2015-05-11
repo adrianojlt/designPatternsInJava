@@ -1,9 +1,9 @@
 package pt.adrz.designpatterns.factory.dao;
 
-import pt.adrz.designpatterns.factory.dao.interfaces.AccountDAO;
+import pt.adrz.designpatterns.factory.dao.interfaces.Account;
 import pt.adrz.designpatterns.factory.dao.models.Customer;
 
-public class MySqlAccountDAO implements AccountDAO {
+public class MySqlAccountDAO implements Account {
 	
 	public static String TYPE = "MySql";
 
