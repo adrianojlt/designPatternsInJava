@@ -9,7 +9,7 @@ import pt.adrz.designpatterns.template.TestDriveTemplate;
 public class Main {
 
 	/**
-	 * @param args teset
+	 * @param args 
 	 */
 	public static void main(String[] args) {
 		
