@@ -175,7 +175,7 @@ public class DesignPatterns {
 		decaf = new CondimentMilk(decaf); 	// ... wrap it with more Milk
 		decaf = new CondimentSoy(decaf); 	// ... wrap it with Soy
 		
-		System.out.println(decaf.getDescription() + " �" + decaf.cost());
+		System.out.println(decaf.getDescription() + " E" + decaf.cost());
 	}
 	
 
