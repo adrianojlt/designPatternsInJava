@@ -17,5 +17,8 @@ public class TestDriveFacadeHomeTheater {
  
 		homeTheater.watchMovie("Raiders of the Lost Ark");
 		homeTheater.endMovie();
+		
+		homeTheater.listenToCd("CD title");
+		homeTheater.endCd();
 	}
 }

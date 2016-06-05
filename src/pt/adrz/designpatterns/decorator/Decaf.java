@@ -1,6 +1,6 @@
 package pt.adrz.designpatterns.decorator;
 
-public class Decaf extends Beverage{
+public class Decaf extends Beverage {
 	
 	public Decaf() {
 		this.description = "Decaf Coffee";
