@@ -27,6 +27,10 @@ public class SwingObserverExample {
 		frame.setSize(150, 70);
 		frame.setVisible(true);
 	}
+	
+	public static void main(String[] args) {
+		new SwingObserverExample();
+	}
 }
 
 
